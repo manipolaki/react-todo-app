@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "./logo.svg";
+import Todo from "./Screens/Todo/index";
 import "./App.css";
-import Todo from "./Screens/Todo";
 
 function App() {
   return (

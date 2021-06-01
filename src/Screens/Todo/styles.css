@@ -15,9 +15,11 @@
 .list-item-actions {
   display: flex;
 }
+.list-item-actions button {
+  margin-right: 5px;
+}
 .hover-btn {
   display: none;
-  margin-right: 5px;
 }
 .list-item:hover .hover-btn {
   display: block;

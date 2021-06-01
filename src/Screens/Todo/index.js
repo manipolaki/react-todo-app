@@ -1,9 +1,14 @@
 import React from "react";
-import TodoInput from "../Components/TodoInput";
-import TodoList from "../Components/TodoList";
+import TodoInput from "./Components/TodoInput";
+import TodoList from "./Components/TodoList";
+import "./styles.css";
 
 export default function (props) {
   const [state, setState] = React.useState({ todos: [] });
+
+  React.useEffect(() => {
+    console.log("Todos:", state.todos);
+  }, [state.todos]);
   const onAddTodo = (todo) => {
     console.log("onAddTodo:", todo);
     if (!todo) {
@@ -32,7 +37,6 @@ export default function (props) {
     });
   };
   const onToggleClick = (id) => {
-    console.log("onToggleClick:", id);
     setState({
       ...state,
       todos: state.todos.map((todo) =>
