@@ -1,0 +1,23 @@
+.list-container {
+  width: 400px;
+  margin: auto;
+}
+.list-ul {
+  text-align: left;
+}
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  min-height: 30px;
+  cursor: pointer;
+}
+.list-item-actions {
+  display: flex;
+}
+.hover-btn {
+  display: none;
+  margin-right: 5px;
+}
+.list-item:hover .hover-btn {
+  display: block;
+}
