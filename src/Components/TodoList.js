@@ -36,6 +36,12 @@ export default function (props) {
                     editTodo: { ...todo, value: e.target.value },
                   })
                 }
+                onKeyPress={(e) => {
+                  if (e.key === "Enter") {
+                    props.updateTodo(state.editTodo);
+                    setState({ ...state, editTodo: {} });
+                  }
+                }}
               />
             )}
             <div className="list-item-actions">
