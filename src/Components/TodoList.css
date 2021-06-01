@@ -10,6 +10,7 @@
   justify-content: space-between;
   min-height: 30px;
   cursor: pointer;
+  margin: 5px auto;
 }
 .list-item-actions {
   display: flex;

@@ -12,6 +12,7 @@ export default function (props) {
         onKeyPress={(e) => {
           if (e.key === "Enter") {
             props.addTodo(todo);
+            setTodo("");
           }
         }}
         value={todo}
